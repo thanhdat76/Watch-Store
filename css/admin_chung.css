@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+    height: 100vh;
+    --text-color:white;
+    --text-color-2:black;
+    --background:#333333;
+    --hover-text:#c89979;
+    --border-bottom:#484848;
+    --bachground-item:#c89979;
+    --border-product: rgb(0 0 0 / 30%);
+    --heart-hover:red;
+    --color-face:#3a589d;
+    --color-insta:#3b6994;
+    --color-twitter: #2478ba;
+    --color-wifi: #fc7600;
+    --color-linked: #0072b7;
+    --color-border-bottem-main-left: #f4f4f4;
+    --color-text-main-tittle: #9494a5;
+    background-color: var(--background);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.admin{
+
+    background-color: var(--background);
+    padding-bottom: 20px;
+}
+.admin_frame{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.admin_left{
+    width: 30%;
+    margin-right: 15px;
+    padding: 7px;
+    border: 1px solid black;
+}
+.admin_left_logo{
+    display: block;
+    max-width: 60%;
+    margin: 0px auto;
+    padding-left: 20px;
+}
+.admin_left_quanly{
+    margin-top: 20px;
+}
+.admin_left_quanly h3{
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+    color: var(--text-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+}
+.admin_left_quanly h3::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    border: 1px solid white;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.admin_left_quanly_frame{
+    margin-top: 10px;
+}
+.main_left_quanly_frame_item{
+    padding: 25px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+    margin: 20px 0px;
+}
+.main_left_quanly_frame_item:last-child{
+    margin-bottom: 0px;
+}
+.main_left_quanly_frame_item p a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: 0.3s linear;
+}
+.main_left_quanly_frame_item p a:hover{
+    color: var(--hover-text);
+}
+
+footer{
+    background-color: var(--background);
+    padding: 10px 0px;
+}
+footer h1{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.admin_right{
+    width: 70%;
+    padding: 5px;
+}

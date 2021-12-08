@@ -1,0 +1,87 @@
+
+.main_right h1{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+/* phần làm nút thêm sản phẩm */
+.main_right_add{
+    width: 100%;
+    text-align: right;
+    padding: 10px 7px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main_right_add a{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid white;
+    font-size: 1.5rem;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+
+.main_right_table
+{
+    width: 100%;
+    border: 1px solid white;
+}
+.main_right_table th{
+    padding: 7px 0px;
+    border-bottom: 1px solid white;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.main_right_table_id{
+    width: 15%;
+    border-right: 1px solid white;
+}
+.main_right_table_ten{
+    width: 28%;
+    border-right: 1px solid white;
+}
+.main_right_table_anh{
+    width: 28%;
+    border-right: 1px solid white;
+}
+.main_right_table_gia{
+    width: 15%;
+    border-right: 1px solid white;
+}
+.main_right_table_chucnang{
+    width: 14%;
+}
+
+
+.main_right_table tr td{
+    text-align: center;
+    font-size: 1.5rem;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    color: var(--text-color);
+}
+.main_right_table tr td:last-child{
+    border-right: none;
+}
+.main_right_table_anh_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+.main_right_table tr td img{
+    max-width: 50%;
+}
+.main_right_table_chucnang_delete_edit a{
+    margin: 10px;
+    color: var(--text-color);
+}

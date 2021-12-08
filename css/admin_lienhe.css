@@ -1,0 +1,31 @@
+html{
+    font-size: 14px;
+}
+.admin_right_tittle{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px 15px 0px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.admin_right_table table{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.admin_right_table table th{
+    text-transform: uppercase;
+    padding: 25px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    font-size: 1.3rem;
+}
+
+.admin_right_table table td{
+    font-size: 1.1rem;
+    padding: 20px 10px;
+    border: 1px solid white;
+}
