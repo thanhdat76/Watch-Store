@@ -1,6 +1,6 @@
 <?php
 session_start();
-include"./admin/connect.php";
+include"../admin/connect.php";
 // tăng số lượng
 if(isset($_GET["themsoluong"]))
 {

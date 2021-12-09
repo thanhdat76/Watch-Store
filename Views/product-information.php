@@ -15,94 +15,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
      <!-- link của icon -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./CSS/product-information.css">
+    
+    <link rel="stylesheet" href="../css/product-information.css">
+
 </head>
 <body>
-    <header>
-        <div class="header-1">
-            <div class="container">
-                <div class="header-1-s">
-                    <div class="header-1-item-1">
-                        <p class="header-1-item-text-1"><i class="fas fa-map-marker-alt icon"></i> 319 - C16 Lý Thường Kiệt, P.15, Q.11, Tp.HCM</p>
-                        <p class="header-1-item-text-1"><i class="fas fa-phone-alt icon"></i> <a href="" class="header-1-item-text-link">076 922 0162</a></p>
-                    </div>
-                    <div class="header-1-item-1">
-                        <p class="header-1-item-text-2"><a href="" class="header-1-item-text-link"><i class="fab fa-facebook-f"></i></a></p>
-                        <p class="header-1-item-text-2"><a href="" class="header-1-item-text-link"><i class="fab fa-instagram"></i></a></p>
-                        <p class="header-1-item-text-2"><a href="" class="header-1-item-text-link"><i class="fab fa-twitter"></i></a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Header -->
+    <?php
+      include('Shared/header.php');
+    ?>
+    <!-- hết phần header  -->
 
+    <!-- làm phần main  -->
 
-        <div class="header-2">
-            <div class="container">
-                <div class="header-2-s">
-
-                    <div class="header-2-logo">
-                        <img src="./logo/logo-mona-3.png" alt="">
-                    </div>
-
-                    <div class="header-2-search">
-                        <input type="text" placeholder="Tìm kiếm">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-
-
-                    <div class="header-2-right">
-                        <p class="header-2-right-text"><a href=""><i class="fas fa-heart"></i></a></p>
-                        <p class="header-2-right-cart"><span class="header-2-right-number">0</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- lam phan icon de dropmenu khi responsive -->
-        <input type="checkbox" id="toggle-menu">
-        <label for="toggle-menu" class="header-icon-responsive">
-            <i class="fas fa-bars" id="header-icon1" ></i>
-            <i class="fas fa-times" id="header-icon2"></i>
-        </label>
-        <div class="header-3">
-                <div class="header-3-s">
-                    <ul class="header-3-list">
-                        <li class="header-3-list-item"><a href="./index.php" class="header-3-list-item-link">Trang chủ</a></li>
-                        <li class="header-3-list-item"><a href="./introduce.php" class="header-3-list-item-link">Giới thiệu</a></li>
-                        <li class="header-3-list-item active"><a href="./product-boy.php" class="header-3-list-item-link">đồng hồ nam</a></li>
-                        <li class="header-3-list-item"><a href="./product-girl.php" class="header-3-list-item-link">đồng hồ nữ</a></li>
-                        <li class="header-3-list-item"><a href="./news.php" class="header-3-list-item-link">blogs</a></li>
-                        <li class="header-3-list-item"><a href="./contact.php" class="header-3-list-item-link">liên hệ</a></li>
-                        <li class="header-3-list-item header-3-list-item-mobile">
-                            <div class="header-3-list-item-search">
-                                <input type="text" name="" id="" class="header-3-list-item-search-input" placeholder="Tìm kiếm">
-                                <button class="header-3-list-item-search-btn" type="submit"><i class="fas fa-search"></i></button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-    </header>
-<!-- hết phần header  -->
-
-<!-- làm phần main  -->
-
-<div class="main">
-<?php
-include"./admin/connect.php";
-if(isset($_GET["id"]))
-{
-    $id=$_GET["id"];
-    $sql="SELECT * FROM `sanpham` WHERE ID=$id";
-    $query=mysqli_query($conn, $sql);
-    $row=mysqli_fetch_assoc($query);
-}
-?>
+    <div class="main">
+    <?php
+        include"../admin/connect.php";
+        if(isset($_GET["id"]))
+        {
+            $id=$_GET["id"];
+            $sql="SELECT * FROM `sanpham` WHERE ID=$id";
+            $query=mysqli_query($conn, $sql);
+            $row=mysqli_fetch_assoc($query);
+        }
+    ?>
     <div class="container">
         <!-- làm phần main thứ nhất  -->
         <div class="main-1">
             <div class="main-1-left">
                 <div class="main-1-left-img">
-                    <img src="./anhsanpham/<?php echo $row["anhsanpham"]?>" alt="">
+                    <img src="../Assets/anhsanpham/<?php echo $row["anhsanpham"]?>" alt="">
 
                     <h3 class="main-1-left-img-sale">-29%</h3>
                     <p class="main-1-left-img-heart"><i class="fas fa-heart"></i></p>
@@ -110,20 +52,20 @@ if(isset($_GET["id"]))
 
                 <div class="main-1-left-choose">
                   <div class="main-1-left-choose-item">
-                      <img class="main-1-left-choose-item-img" src="./anhsanpham/<?php echo $row["anh1"]?>" alt="">
+                      <img class="main-1-left-choose-item-img" src="../Assets/anhsanpham/<?php echo $row["anh1"]?>" alt="">
                   </div>
 
                   <div class="main-1-left-choose-item">
-                    <img class="main-1-left-choose-item-img" src="./anhsanpham/<?php echo $row["anh2"]?>" alt="">
+                    <img class="main-1-left-choose-item-img" src="../Assets/anhsanpham/<?php echo $row["anh2"]?>" alt="">
                 </div>
 
 
                 <div class="main-1-left-choose-item">
-                    <img class="main-1-left-choose-item-img" src="./anhsanpham/<?php echo $row["anh3"]?>" alt="">
+                    <img class="main-1-left-choose-item-img" src="../Assets/anhsanpham/<?php echo $row["anh3"]?>" alt="">
                 </div>
 
                 <div class="main-1-left-choose-item">
-                    <img class="main-1-left-choose-item-img" src="./anhsanpham/<?php echo $row["anh4"]?>" alt="">
+                    <img class="main-1-left-choose-item-img" src="../Assets/anhsanpham/<?php echo $row["anh4"]?>" alt="">
                 </div>
                 </div>
 
@@ -166,54 +108,54 @@ if(isset($_GET["id"]))
 
                 <div class="main-1-right-type-pay">
                     <div class="main-1-right-type-pay-item">
-                        <a href=""><img src="./banking/Agribank-logo.png" alt=""></a>
+                        <a href=""><img src="../Assets/banking/Agribank-logo.png" alt=""></a>
                     </div>
 
                     <div class="main-1-right-type-pay-item">
-                        <a href=""><img src="./banking/CBbank-logo.png" alt=""></a>
+                        <a href=""><img src="../Assets/banking/CBbank-logo.png" alt=""></a>
                     </div>
 
                     <div class="main-1-right-type-pay-item">
-                        <a href=""><img src="./banking/logo-ngan-hang-BIDV.png" alt=""></a>
+                        <a href=""><img src="../Assets/banking/logo-ngan-hang-BIDV.png" alt=""></a>
                     </div>
 
                     <div class="main-1-right-type-pay-item">
-                        <a href=""><img src="./banking/logo-ngan-hang-MB-new2020.gif" alt=""></a>
-                    </div>
-
-
-                    <div class="main-1-right-type-pay-item">
-                        <a href=""><img src="./banking/logo-ngan-hang-Sacombank.png" alt=""></a>
+                        <a href=""><img src="../Assets/banking/logo-ngan-hang-MB-new2020.gif" alt=""></a>
                     </div>
 
 
                     <div class="main-1-right-type-pay-item">
-                        <a href=""><img src="./banking/logo-ngan-hang-Techcombank.png" alt=""></a>
-                    </div>
-
-                    <div class="main-1-right-type-pay-item">
-                        <a href=""><img src="./banking/logo-ngan-hang-Vietcombank.png" alt=""></a>
+                        <a href=""><img src="../Assets/banking/logo-ngan-hang-Sacombank.png" alt=""></a>
                     </div>
 
 
                     <div class="main-1-right-type-pay-item">
-                        <a href=""><img src="./banking/logo-ngan-hang-Vietinbank.png" alt=""></a>
+                        <a href=""><img src="../Assets/banking/logo-ngan-hang-Techcombank.png" alt=""></a>
                     </div>
 
                     <div class="main-1-right-type-pay-item">
-                        <a href=""><img src="./banking/logo-ngan-hang-VPbank.png" alt=""></a>
+                        <a href=""><img src="../Assets/banking/logo-ngan-hang-Vietcombank.png" alt=""></a>
+                    </div>
+
+
+                    <div class="main-1-right-type-pay-item">
+                        <a href=""><img src="../Assets/banking/logo-ngan-hang-Vietinbank.png" alt=""></a>
                     </div>
 
                     <div class="main-1-right-type-pay-item">
-                        <a href=""><img src="./banking/Oceanbank-logo.png" alt=""></a>
+                        <a href=""><img src="../Assets/banking/logo-ngan-hang-VPbank.png" alt=""></a>
                     </div>
 
                     <div class="main-1-right-type-pay-item">
-                        <a href=""><img src="./banking/TPbank-logo.png" alt=""></a>
+                        <a href=""><img src="../Assets/banking/Oceanbank-logo.png" alt=""></a>
                     </div>
 
                     <div class="main-1-right-type-pay-item">
-                        <a href=""><img src="./banking/VIB-bank-logo.png" alt=""></a>
+                        <a href=""><img src="../Assets/banking/TPbank-logo.png" alt=""></a>
+                    </div>
+
+                    <div class="main-1-right-type-pay-item">
+                        <a href=""><img src="../Assets/banking/VIB-bank-logo.png" alt=""></a>
                     </div>
                 </div>
 
@@ -242,7 +184,7 @@ if(isset($_GET["id"]))
 
 
         <!-- sang làm phần main thứ 2 -->
-        <div class="main-2">
+        <!-- <div class="main-2">
             <div class="main-2-tittle">
                 <h3 class="main-2-tittle-item main-2-tittle-item-split main-2-tittle-item-mota">Mô tả</h3>
                 <h3 class="main-2-tittle-item main-2-tittle-item-danhgia">Đánh giá (<span class="main-2-tittle-item-number">0</span>)</h3>
@@ -266,7 +208,7 @@ if(isset($_GET["id"]))
                     </p>
                 </div>
                 <!-- làm phần mục đánh giá để điền  -->
-                <div class="main-2-frame-danhgia-frame">
+                <!-- <div class="main-2-frame-danhgia-frame">
                     <h3 class="main-2-frame-danhgia-tittle">
                         Hãy là người đầu tiên nhận xét “Classico 4” 
                     </h3>
@@ -341,348 +283,145 @@ if(isset($_GET["id"]))
 
 
                     <input type="submit" class="main-2-frame-danhgia-btn-submit" value="Gửi đi">
-                </div>
-                <!-- hết làm phần mục đánh giá để điền  -->
+                </div> -->
+                <!-- hết làm phần mục đánh giá để điền   -->
             </div>
-        </div>
+        </div> -->
         <!-- hết làm phần main thứ 2 -->
-
-
-
-
         <!-- sang làm phần main thứ 3 -->
-<div class="main-3">
-    <h1 class="main-3-tittle">
-        Sản phẩm tương tự
-    </h1>
-    <div class="main-3-s">
-        <div class="main-3-item">
-            <div class="main-3-item-image">
-                <a href=""><img class="main-3-item-image-1" src="./sanpham-men/sp11.png" alt=""></a>
-                <div class="main-3-item-image-overlay">
-                    <a href=""><img class="main-3-item-image-overlay-2" src="./sanpham-men/sp10.png" alt=""></a>
+        <!-- <div class="main-3">
+            <h1 class="main-3-tittle">
+                Sản phẩm tương tự
+            </h1>
+            <div class="main-3-s">
+                <div class="main-3-item">
+                    <div class="main-3-item-image">
+                        <a href=""><img class="main-3-item-image-1" src="../Assets/sanpham-men/sp11.png" alt=""></a>
+                        <div class="main-3-item-image-overlay">
+                            <a href=""><img class="main-3-item-image-overlay-2" src="../Assets/sanpham-men/sp10.png" alt=""></a>
+                        </div>
+                        <div class="main-3-item-image-heart">
+                            <a href=""><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="main-3-item-text">
+                        <h3 class="main-3-item-tittle">Classico 3</h3>
+                        <p class="main-3-item-price">700.000đ</p>
+                        <p class="main-3-item-btn"><a href="">Thêm vào giỏ</a></p>
+                    </div>
                 </div>
-                <div class="main-3-item-image-heart">
-                    <a href=""><i class="fas fa-heart"></i></a>
+            
+            
+                <div class="main-3-item">
+                    <div class="main-3-item-image">
+                        <a href=""><img class="main-3-item-image-1" src="../Assets/sanpham-men/sp12.png" alt=""></a>
+                        <div class="main-3-item-image-overlay">
+                            <a href=""><img class="main-3-item-image-overlay-2" src="../Assets/sanpham-men/sp13.png" alt=""></a>
+                        </div>
+                        <div class="main-3-item-image-heart">
+                            <a href=""><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="main-3-item-text">
+                        <h3 class="main-3-item-tittle">Classico 3</h3>
+                        <p class="main-3-item-price">700.000đ</p>
+                        <p class="main-3-item-btn"><a href="">Thêm vào giỏ</a></p>
+                    </div>
+                </div>
+            
+            
+            
+                <div class="main-3-item">
+                    <div class="main-3-item-image">
+                        <a href=""><img class="main-3-item-image-1" src="../Assets/sanpham-men/sp14.png" alt=""></a>
+                        <div class="main-3-item-image-overlay">
+                            <a href=""><img class="main-3-item-image-overlay-2" src="../Assets/sanpham-men/sp15.png" alt=""></a>
+                        </div>
+                        <div class="main-3-item-image-heart">
+                            <a href=""><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="main-3-item-text">
+                        <h3 class="main-3-item-tittle">Classico 3</h3>
+                        <p class="main-3-item-price">700.000đ</p>
+                        <p class="main-3-item-btn"><a href="">Thêm vào giỏ</a></p>
+                    </div>
+                </div>
+            
+            
+            
+                <div class="main-3-item">
+                    <div class="main-3-item-image">
+                        <a href=""><img class="main-3-item-image-1" src="../Assets/sanpham-men/sp16.png" alt=""></a>
+                        <div class="main-3-item-image-overlay">
+                            <a href=""><img class="main-3-item-image-overlay-2" src="../Assets/sanpham-men/sp17.png" alt=""></a>
+                        </div>
+                        <div class="main-3-item-image-heart">
+                            <a href=""><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="main-3-item-text">
+                        <h3 class="main-3-item-tittle">Classico 3</h3>
+                        <p class="main-3-item-price">700.000đ</p>
+                        <p class="main-3-item-btn"><a href="">Thêm vào giỏ</a></p>
+                    </div>
+                </div>
+            
+            
+            
+                <div class="main-3-item">
+                    <div class="main-3-item-image">
+                        <a href=""><img class="main-3-item-image-1" src="../Assets/sanpham-men/sp18.png" alt=""></a>
+                        <div class="main-3-item-image-overlay">
+                            <a href=""><img class="main-3-item-image-overlay-2" src="../Assets/sanpham-men/sp19.png" alt=""></a>
+                        </div>
+                        <div class="main-3-item-image-heart">
+                            <a href=""><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="main-3-item-text">
+                        <h3 class="main-3-item-tittle">Classico 3</h3>
+                        <p class="main-3-item-price">700.000đ</p>
+                        <p class="main-3-item-btn"><a href="">Thêm vào giỏ</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="main-3-item-text">
-                <h3 class="main-3-item-tittle">Classico 3</h3>
-                <p class="main-3-item-price">700.000đ</p>
-                <p class="main-3-item-btn"><a href="">Thêm vào giỏ</a></p>
-            </div>
-        </div>
-    
-    
-        <div class="main-3-item">
-            <div class="main-3-item-image">
-                <a href=""><img class="main-3-item-image-1" src="./sanpham-men/sp12.png" alt=""></a>
-                <div class="main-3-item-image-overlay">
-                    <a href=""><img class="main-3-item-image-overlay-2" src="./sanpham-men/sp13.png" alt=""></a>
-                </div>
-                <div class="main-3-item-image-heart">
-                    <a href=""><i class="fas fa-heart"></i></a>
-                </div>
-            </div>
-            <div class="main-3-item-text">
-                <h3 class="main-3-item-tittle">Classico 3</h3>
-                <p class="main-3-item-price">700.000đ</p>
-                <p class="main-3-item-btn"><a href="">Thêm vào giỏ</a></p>
-            </div>
-        </div>
-    
-    
-    
-        <div class="main-3-item">
-            <div class="main-3-item-image">
-                <a href=""><img class="main-3-item-image-1" src="./sanpham-men/sp14.png" alt=""></a>
-                <div class="main-3-item-image-overlay">
-                    <a href=""><img class="main-3-item-image-overlay-2" src="./sanpham-men/sp15.png" alt=""></a>
-                </div>
-                <div class="main-3-item-image-heart">
-                    <a href=""><i class="fas fa-heart"></i></a>
-                </div>
-            </div>
-            <div class="main-3-item-text">
-                <h3 class="main-3-item-tittle">Classico 3</h3>
-                <p class="main-3-item-price">700.000đ</p>
-                <p class="main-3-item-btn"><a href="">Thêm vào giỏ</a></p>
-            </div>
-        </div>
-    
-    
-    
-        <div class="main-3-item">
-            <div class="main-3-item-image">
-                <a href=""><img class="main-3-item-image-1" src="./sanpham-men/sp16.png" alt=""></a>
-                <div class="main-3-item-image-overlay">
-                    <a href=""><img class="main-3-item-image-overlay-2" src="./sanpham-men/sp17.png" alt=""></a>
-                </div>
-                <div class="main-3-item-image-heart">
-                    <a href=""><i class="fas fa-heart"></i></a>
-                </div>
-            </div>
-            <div class="main-3-item-text">
-                <h3 class="main-3-item-tittle">Classico 3</h3>
-                <p class="main-3-item-price">700.000đ</p>
-                <p class="main-3-item-btn"><a href="">Thêm vào giỏ</a></p>
-            </div>
-        </div>
-    
-    
-    
-        <div class="main-3-item">
-            <div class="main-3-item-image">
-                <a href=""><img class="main-3-item-image-1" src="./sanpham-men/sp18.png" alt=""></a>
-                <div class="main-3-item-image-overlay">
-                    <a href=""><img class="main-3-item-image-overlay-2" src="./sanpham-men/sp19.png" alt=""></a>
-                </div>
-                <div class="main-3-item-image-heart">
-                    <a href=""><i class="fas fa-heart"></i></a>
-                </div>
-            </div>
-            <div class="main-3-item-text">
-                <h3 class="main-3-item-tittle">Classico 3</h3>
-                <p class="main-3-item-price">700.000đ</p>
-                <p class="main-3-item-btn"><a href="">Thêm vào giỏ</a></p>
-            </div>
-        </div>
-    </div>
-
-
-
-</div>
-
+        </div> -->
         <!-- hết phần main thứ 3  -->
     </div>
-    <div class="main-7">
-        <form action="">
-            <div class="container">
-                <div class="main-7-s">
-                       <div class="main-7-tittle">
-                           <h2>ĐĂNG KÝ NHẬN THÔNG TIN</h2>
-                       </div>
-                       <div class="main-7-search">
-                           <input type="text" placeholder="Tìm kiếm..." id="main-7-search-input">
-                           <button type="submit" id="main-7-search-btn">Đăng ký</button>
-                       </div>
-                </div>
-            </div>
-        </form>
     </div>
-</div>
-<!-- hết làm phần main -->
+    <!-- hết làm phần main -->
 
 
-<!-- làm phần footer  -->
-<footer>
-    <div class="container">
-        <div class="footer-s">
-         <div class="row2">
- 
- 
-             <div class="footer-item footer-item-1">
-                 <h2 class="footer-item-tittle">THÔNG TIN LIÊN HỆ</h2>
-                 <div class="footer-item-list">
- 
- 
-                     <div class="footer-item-list-item">
-                         <div class="footer-item-list-item-icon">
-                             <i class="fas fa-map-marker-alt"></i>
-                         </div>
-                         <div class="footer-item-list-item-text">
-                             <p><a href="">319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         <div class="footer-item-list-item-icon">
-                             <i class="fas fa-phone-alt"></i>
-                         </div>
-                         <div class="footer-item-list-item-text">
-                             <p><a href="">076 922 0162</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         <div class="footer-item-list-item-icon">
-                             <i class="fas fa-envelope-open-text"></i>
-                         </div>
-                         <div class="footer-item-list-item-text">
-                             <p><a href="">demonhunterg@gmail.com
-                                 mon@mona.media</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         <div class="footer-item-list-item-icon">
-                             <i class="fab fa-skype"></i>
-                         </div>
-                         <div class="footer-item-list-item-text">
-                             <p><a href="">demonhunterp</a></p>
-                         </div>
-                     </div>
- 
- 
-                 </div>
-                 <div class="footer-item-icon">
-                     <div class="footer-item-icon-item footer-item-icon-item-face">
-                         <a href=""><i class="fab fa-facebook-f"></i></a>
-                     </div>
-                     <div class="footer-item-icon-item footer-item-icon-item-insta">
-                         <a href=""><i class="fab fa-instagram"></i></a>
-                     </div>
-                     <div class="footer-item-icon-item footer-item-icon-item-twitter">
-                         <a href=""><i class="fab fa-twitter"></i></a>
-                     </div>
-                     <div class="footer-item-icon-item footer-item-icon-item-wifi">
-                         <a href=""><i class="fas fa-wifi"></i></a>
-                     </div>
-                     <div class="footer-item-icon-item footer-item-icon-item-linked">
-                         <a href=""><i class="fab fa-linkedin-in"></i></a>
-                     </div>
-                 </div>
-             </div>
- 
- 
-                <div class="footer-item footer-item-1">
-                 <h2 class="footer-item-tittle">LIÊN KẾT</h2>
-                 <div class="footer-item-list">
- 
- 
-                     <div class="footer-item-list-item">
-                        
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./introduce.php">Giới thiệu</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                        
-                         <div class="footer-item-list-item-text ">
-                             <p><a href="./product-boy.php" class="footer-active">Đồng hồ nam</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./product-girl.php">Đồng hồ nữ</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                        
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./news.php">Blogs</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                        
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./contact.php">Liên hệ</a></p>
-                         </div>
-                     </div>
- 
-                 </div>
-             </div>
- 
- 
- 
-             <div class="footer-item footer-item-1">
-                 <h2 class="footer-item-tittle">HỖ TRỢ</h2>
-                 <div class="footer-item-list">
- 
- 
-                     <div class="footer-item-list-item">
-                         
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./introduce.php">Hướng dẫn mua hàng</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./introduce.php">Hướng dẫn thanh toán</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                        
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./introduce.php">Chính sách bảo hành</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                       
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./introduce.php">Chính sách đổi trả</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                     
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./contact.php">Tư vấn khách hàng</a></p>
-                         </div>
-                     </div>
- 
-                 </div>
-             </div>
- 
-             <div class="footer-item footer-item-4">
-                 <h2 class="footer-item-tittle">TẢI ỨNG DỤNG TRÊN</h2>
-                 <div class="footer-item-list">
- 
- 
-                     <div class="footer-item-list-item">
-                        
-                         <div class="footer-item-list-item-text">
-                             <p><a href="">Ứng dụng Mona Watch hiện có sẵn trên Google Play & App Store. Tải nó ngay.</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         <img class="footer-item-list-item-img" src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/img-googleplay.jpg" alt="">
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         <img class="footer-item-list-item-img" src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/img-appstore.jpg" alt="">
-                     </div>
-                 </div>
-             </div>
-         </div>
-        </div>
-    </div>
-    <h3 class="footer-banquyen">@Bản quyền thuộc về lương ngọc vinh</h3>
- </footer>
-<!-- hết phần footer -->
- <!-- thư viện js của jquery -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
- <!-- thư viện js của AOS -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.0.2/aos.js"></script>
-<script>
+    <!-- Footer -->
+        <?php
+        include('Shared/footer.php');
+        ?>
+    <!-- Footer end -->
 
-    // làm phần chuyển sản phẩm khi chọn ảnh 
-    $(document).ready(function(){
-        $(".main-1-left-choose-item-img").click(function(){
-            $(".main-1-left-img img").attr("src", $(this).attr("src"));
+    <!-- thư viện js của jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- thư viện js của AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.0.2/aos.js"></script>
+    <script>
+
+        // làm phần chuyển sản phẩm khi chọn ảnh 
+        $(document).ready(function(){
+            $(".main-1-left-choose-item-img").click(function(){
+                $(".main-1-left-img img").attr("src", $(this).attr("src"));
+            });
+
+
+            // làm phần hiển thị đánh giá và mô tả 
+            $(".main-2-tittle-item-mota").click(function(){
+                $(".main-2-frame-danhgia").hide(1000);
+                $(".main-2-frame-mota").show(1000);
+            });
+            $(".main-2-tittle-item-danhgia").click(function(){
+                $(".main-2-frame-mota").hide(1000);
+                $(".main-2-frame-danhgia").show(1000);
+            });
         });
-
-
-        // làm phần hiển thị đánh giá và mô tả 
-        $(".main-2-tittle-item-mota").click(function(){
-            $(".main-2-frame-danhgia").hide(1000);
-            $(".main-2-frame-mota").show(1000);
-        });
-        $(".main-2-tittle-item-danhgia").click(function(){
-            $(".main-2-frame-mota").hide(1000);
-            $(".main-2-frame-danhgia").show(1000);
-        });
-    });
-</script>
+    </script>
 </body>
 </html>

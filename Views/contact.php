@@ -15,381 +15,110 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
      <!-- link của icon -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-     <link rel="stylesheet" href="./CSS/contact.css">
+     <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
-    <header>
-        <div class="header-1">
-            <div class="container">
-                <div class="header-1-s">
-                    <div class="header-1-item-1">
-                        <p class="header-1-item-text-1"><i class="fas fa-map-marker-alt icon"></i> 319 - C16 Lý Thường Kiệt, P.15, Q.11, Tp.HCM</p>
-                        <p class="header-1-item-text-1"><i class="fas fa-phone-alt icon"></i> <a href="" class="header-1-item-text-link">076 922 0162</a></p>
-                    </div>
-                    <div class="header-1-item-1">
-                        <p class="header-1-item-text-2"><a href="" class="header-1-item-text-link"><i class="fab fa-facebook-f"></i></a></p>
-                        <p class="header-1-item-text-2"><a href="" class="header-1-item-text-link"><i class="fab fa-instagram"></i></a></p>
-                        <p class="header-1-item-text-2"><a href="" class="header-1-item-text-link"><i class="fab fa-twitter"></i></a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="header-2">
-            <div class="container">
-                <div class="header-2-s">
-
-                    <div class="header-2-logo">
-                        <img src="./logo/logo-mona-2.png" alt="">
-                    </div>
-
-                    <div class="header-2-search">
-                        <input type="text" placeholder="Tìm kiếm">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-
-
-                    <div class="header-2-right">
-                        <p class="header-2-right-text"><a href=""><i class="fas fa-heart"></i></a></p>
-                        <p class="header-2-right-cart"><span class="header-2-right-number">0</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- lam phan icon de dropmenu khi responsive -->
-        <input type="checkbox" id="toggle-menu">
-        <label for="toggle-menu" class="header-icon-responsive">
-            <i class="fas fa-bars" id="header-icon1" ></i>
-            <i class="fas fa-times" id="header-icon2"></i>
-        </label>
-        <div class="header-3">
-                <div class="header-3-s">
-                    <ul class="header-3-list">
-                        <li class="header-3-list-item"><a href="./index.php" class="header-3-list-item-link">Trang chủ</a></li>
-                        <li class="header-3-list-item"><a href="./introduce.php" class="header-3-list-item-link">Giới thiệu</a></li>
-                        <li class="header-3-list-item "><a href="./product-boy.php" class="header-3-list-item-link">đồng hồ nam</a></li>
-                        <li class="header-3-list-item"><a href="./product-girl.php" class="header-3-list-item-link">đồng hồ nữ</a></li>
-                        <li class="header-3-list-item"><a href="./news.php" class="header-3-list-item-link">blogs</a></li>
-                        <li class="header-3-list-item active"><a href="./contact.php" class="header-3-list-item-link">liên hệ</a></li>
-                        <li class="header-3-list-item header-3-list-item-mobile">
-                            <div class="header-3-list-item-search">
-                                <input type="text" name="" id="" class="header-3-list-item-search-input" placeholder="Tìm kiếm">
-                                <button class="header-3-list-item-search-btn" type="submit"><i class="fas fa-search"></i></button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-    </header>
-<!-- hết phần header  -->
-
-<!-- làm phần main -->
-<div class="main">
-    <div class="container">
-        <div class="main-1">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4023575075466!2d105.80557331538935!3d21.016580793568806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab60b64b6333%3A0xb87e2e511eabfce1!2zVHLGsOG7nW5nIMSQw6BvIHThuqFvIE3hu7kgdGh14bqtdCDEkGEgcGjGsMahbmcgdGnhu4duIEFyZW5hIE11bHRpbWVkaWE!5e0!3m2!1svi!2s!4v1628044836790!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-
-        <div class="main-2">
-            <div class="main-2-item">
-                <div class="main-2-item-img">
-                    <img src="./contact/contact1.PNG" alt="">
-                </div>
-                <div class="main-2-item-text">
-                    <h2>Địa chỉ</h2>
-                    <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
-                </div>
-            </div>
-
-
-            <div class="main-2-item">
-                <div class="main-2-item-img">
-                    <img src="./contact/contact2.PNG" alt="">
-                </div>
-                <div class="main-2-item-text">
-                    <h2>Điện thoại:</h2>
-                    <p><a href="">1900 636 648</a></p>
-                    <p>Bấm 109 – Phòng kinh doanh</p>
-                    <p>Bấm 103 – Phòng kỹ thuật</p>
-                </div>
-            </div>
-
-
-
-            <div class="main-2-item">
-                <div class="main-2-item-img">
-                    <img src="./contact/contact3.PNG" alt="">
-                </div>
-                <div class="main-2-item-text">
-                    <h2>Email:</h2>
-                    <p><a href="" class="main-2-item-text-link">demonhunterg@gmail.com</a></p>
-                    <p><a href="" class="main-2-item-text-link">mon@mona.media</a></p>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="main-3">
-            <form action="./admin/admin_add_lienhe.php" method="POST" enctype="multipart/form-data" >
-                <div class="main-3-container">
-                    <div class="main-3-item1">
-                        <div class="main-3-item1-item">
-                            <input name="hoten" class="main-3-item1-item-input" type="text" placeholder="Họ và tên">
-                        </div>
-    
-                        <div class="main-3-item1-item">
-                            <input name="email" class="main-3-item1-item-input" type="email" placeholder="Email">
-                        </div>
-    
-    
-                        <div class="main-3-item1-item">
-                            <input name="sdt" class="main-3-item1-item-input" type="text" placeholder="Số điện thoại">
-                        </div>
-    
-    
-                        <div class="main-3-item1-item">
-                            <input name="diachi" class="main-3-item1-item-input" type="text" placeholder="Địa chỉ">
-                        </div>
-                    </div>
-
-
-                    <div class="main-3-item2">
-                        <textarea name="mota" id="" cols="30" rows="7" placeholder="Lời nhắn"></textarea>
-                    </div>
-
-                    <div class="main-3-item3">
-                        <input name="submit_lienhe" type="submit" value="Gửi">
-                    </div>
-            </div>
-            </form>
-        </div>
-    </div>
-
-    <?php if(isset($_GET["thanhcong"]))
-    {
+    <!-- Header -->
+    <?php
+        include('Shared/header.php');
     ?>
-    <script>
-        alert("Cảm ơn bạn đã để lại lời nhận xét cho chúng tôi");
-    </script>
-    <?php }?>
-    <div class="main-7">
-        <form action="">
-            <div class="container">
-                <div class="main-7-s">
-                       <div class="main-7-tittle">
-                           <h2>ĐĂNG KÝ NHẬN THÔNG TIN</h2>
-                       </div>
-                       <div class="main-7-search">
-                           <input type="text" placeholder="Tìm kiếm..." id="main-7-search-input">
-                           <button type="submit" id="main-7-search-btn">Đăng ký</button>
-                       </div>
+    <!-- Header -->
+
+    <!-- làm phần main -->
+    <div class="main">
+        <div class="container">
+            <div class="main-2">
+                <div class="main-2-item">
+                    <div class="main-2-item-img">
+                        <img src="./contact/contact1.PNG" alt="">
+                    </div>
+                    <div class="main-2-item-text">
+                        <h2>Địa chỉ</h2>
+                        <p>235 Hoàng Quốc Việt, quận Bắc Từ Liêm, Hà Nội</p>
+                    </div>
+                </div>
+
+
+                <div class="main-2-item">
+                    <div class="main-2-item-img">
+                        <img src="./contact/contact2.PNG" alt="">
+                    </div>
+                    <div class="main-2-item-text">
+                        <h2>Điện thoại:</h2>
+                        <p><a href="">0123456789</a></p>
+                        <p>Bấm 113 – Phòng kinh doanh</p>
+                        <p>Bấm 114 – Phòng kỹ thuật</p>
+                    </div>
+                </div>
+
+
+
+                <div class="main-2-item">
+                    <div class="main-2-item-img">
+                        <img src="./contact/contact3.PNG" alt="">
+                    </div>
+                    <div class="main-2-item-text">
+                        <h2>Email:</h2>
+                        <p><a href="" class="main-2-item-text-link">epu235@gmail.com</a></p>
+                        <p><a href="" class="main-2-item-text-link">Electric Power University</a></p>
+                    </div>
                 </div>
             </div>
-        </form>
-    </div>
-</div>
-
-<!-- hết phần main -->
 
 
 
 
+            <div class="main-3">
+                <form action="./admin/admin_add_lienhe.php" method="POST" enctype="multipart/form-data" >
+                    <div class="main-3-container">
+                        <div class="main-3-item1">
+                            <div class="main-3-item1-item">
+                                <input name="hoten" class="main-3-item1-item-input" type="text" placeholder="Họ và tên">
+                            </div>
+        
+                            <div class="main-3-item1-item">
+                                <input name="email" class="main-3-item1-item-input" type="email" placeholder="Email">
+                            </div>
+        
+        
+                            <div class="main-3-item1-item">
+                                <input name="sdt" class="main-3-item1-item-input" type="text" placeholder="Số điện thoại">
+                            </div>
+        
+        
+                            <div class="main-3-item1-item">
+                                <input name="diachi" class="main-3-item1-item-input" type="text" placeholder="Địa chỉ">
+                            </div>
+                        </div>
 
 
+                        <div class="main-3-item2">
+                            <textarea name="mota" id="" cols="30" rows="7" placeholder="Lời nhắn"></textarea>
+                        </div>
 
-
-
-
-
-<!-- làm phần footer  -->
-<footer>
-    <div class="container">
-        <div class="footer-s">
-         <div class="row2">
- 
- 
-             <div class="footer-item footer-item-1">
-                 <h2 class="footer-item-tittle">THÔNG TIN LIÊN HỆ</h2>
-                 <div class="footer-item-list">
- 
- 
-                     <div class="footer-item-list-item">
-                         <div class="footer-item-list-item-icon">
-                             <i class="fas fa-map-marker-alt"></i>
-                         </div>
-                         <div class="footer-item-list-item-text">
-                             <p><a href="">319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         <div class="footer-item-list-item-icon">
-                             <i class="fas fa-phone-alt"></i>
-                         </div>
-                         <div class="footer-item-list-item-text">
-                             <p><a href="">076 922 0162</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         <div class="footer-item-list-item-icon">
-                             <i class="fas fa-envelope-open-text"></i>
-                         </div>
-                         <div class="footer-item-list-item-text">
-                             <p><a href="">demonhunterg@gmail.com
-                                 mon@mona.media</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         <div class="footer-item-list-item-icon">
-                             <i class="fab fa-skype"></i>
-                         </div>
-                         <div class="footer-item-list-item-text">
-                             <p><a href="">demonhunterp</a></p>
-                         </div>
-                     </div>
- 
- 
-                 </div>
-                 <div class="footer-item-icon">
-                     <div class="footer-item-icon-item footer-item-icon-item-face">
-                         <a href=""><i class="fab fa-facebook-f"></i></a>
-                     </div>
-                     <div class="footer-item-icon-item footer-item-icon-item-insta">
-                         <a href=""><i class="fab fa-instagram"></i></a>
-                     </div>
-                     <div class="footer-item-icon-item footer-item-icon-item-twitter">
-                         <a href=""><i class="fab fa-twitter"></i></a>
-                     </div>
-                     <div class="footer-item-icon-item footer-item-icon-item-wifi">
-                         <a href=""><i class="fas fa-wifi"></i></a>
-                     </div>
-                     <div class="footer-item-icon-item footer-item-icon-item-linked">
-                         <a href=""><i class="fab fa-linkedin-in"></i></a>
-                     </div>
-                 </div>
-             </div>
- 
- 
-                <div class="footer-item footer-item-1">
-                 <h2 class="footer-item-tittle">LIÊN KẾT</h2>
-                 <div class="footer-item-list">
- 
- 
-                     <div class="footer-item-list-item">
-                        
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./introduce.php">Giới thiệu</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                        
-                         <div class="footer-item-list-item-text ">
-                             <p><a href="./product-boy.php">Đồng hồ nam</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./product-girl.php">Đồng hồ nữ</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                        
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./news.php" >Blogs</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                        
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./contact.php" class="footer-active">Liên hệ</a></p>
-                         </div>
-                     </div>
- 
-                 </div>
-             </div>
- 
- 
- 
-             <div class="footer-item footer-item-1">
-                 <h2 class="footer-item-tittle">HỖ TRỢ</h2>
-                 <div class="footer-item-list">
- 
- 
-                     <div class="footer-item-list-item">
-                         
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./introduce.php">Hướng dẫn mua hàng</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./introduce.php">Hướng dẫn thanh toán</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                        
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./introduce.php">Chính sách bảo hành</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                       
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./introduce.php">Chính sách đổi trả</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                     
-                         <div class="footer-item-list-item-text">
-                             <p><a href="./contact.php">Tư vấn khách hàng</a></p>
-                         </div>
-                     </div>
- 
-                 </div>
-             </div>
- 
-             <div class="footer-item footer-item-4">
-                 <h2 class="footer-item-tittle">TẢI ỨNG DỤNG TRÊN</h2>
-                 <div class="footer-item-list">
- 
- 
-                     <div class="footer-item-list-item">
-                        
-                         <div class="footer-item-list-item-text">
-                             <p><a href="">Ứng dụng Mona Watch hiện có sẵn trên Google Play & App Store. Tải nó ngay.</a></p>
-                         </div>
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         <img class="footer-item-list-item-img" src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/img-googleplay.jpg" alt="">
-                     </div>
- 
-                     <div class="footer-item-list-item">
-                         <img class="footer-item-list-item-img" src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/img-appstore.jpg" alt="">
-                     </div>
-                 </div>
-             </div>
-         </div>
+                        <div class="main-3-item3">
+                            <input name="submit_lienhe" type="submit" value="Gửi">
+                        </div>
+                </div>
+                </form>
+            </div>
         </div>
+
+        <?php if(isset($_GET["thanhcong"]))
+        {
+        ?>
+        <script>
+            alert("Cảm ơn bạn đã để lại lời nhận xét cho chúng tôi");
+        </script>
+        <?php }?>
     </div>
-    <h3 class="footer-banquyen">@Bản quyền thuộc về lương ngọc vinh</h3>
- </footer>
-<!-- hết phần footer -->
+    <!-- hết phần main -->
+
+    <!-- Footer -->
+    <?php
+        include('Shared/footer.php');
+    ?>
+    <!-- Footer -->
  <!-- thư viện js của jquery -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
  <!-- thư viện js của AOS -->
