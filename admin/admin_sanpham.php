@@ -18,7 +18,7 @@
                 <div class="admin_left">
                     <img class="admin_left_logo" src="../logo/logo-mona-2.png" alt="">
                     <div class="admin_left_quanly">
-                        <h3>hệ thống admin quản lý</h3>
+                        <h3>Admin</h3>
                         <div class="admin_left_quanly_frame">
                             <div class="main_left_quanly_frame_item">
                                 <p><a href="./admin_sanpham.php">Quản lý sản phẩm - Product</a></p>
