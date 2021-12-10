@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="../css/admin_edit_sanpham.css">
     <link rel="stylesheet" href="../css/admin_chung.css">
 </head>
@@ -13,15 +13,19 @@
 
 <div class="admin">
             <div class="admin_frame">
-                <div class="admin_left">
-                    <img class="admin_left_logo" src="../logo/logo-mona-2.png" alt="">
+                <div class="admin_left">                 
                     <div class="admin_left_quanly">
-                        <h3>hệ thống admin quản lý</h3>
+                    <h3>Admin</h3>
                         <div class="admin_left_quanly_frame">
                             <div class="main_left_quanly_frame_item">
-                                <p><a href="./admin_sanpham.php">Quản lý sản phẩm - Product</a></p>
+                                <p><a href="./admin_sanpham.php">Product</a></p>
                             </div>
 
+                            <div class="main_left_quanly_frame_item">
+                                <p><a href="./admin_client.php">Client</a></p>
+                            </div>
+
+                            <!--
                             <div class="main_left_quanly_frame_item">
                                 <p><a href="./admin_new.php">Quản lý tin tức sự kiện - News & Sale</a></p>
                             </div>
@@ -34,7 +38,7 @@
 
                             <div class="main_left_quanly_frame_item">
                                 <p><a href="./admin_lienhe.php">Quản lý phản hồi khách hàng - Contact</a></p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

@@ -115,14 +115,14 @@
                             </tr>
                             <?php }?>
                         </table>
-                        <p class="admin_right_table_consequence">Đã thanh toán: <?php echo number_format($sum)?>đ</p>
+                        <p class="admin_right_table_consequence">Tổng số tiền: <?php echo number_format($sum)?>đ</p>
                     </div>
                 </div>
             </div>
     </div>
 
     <footer>
-        
+        <h1>Hệ thống quản lý cửa hàng bán đồng hồ</h1>
     </footer>
 </body>
 </html>

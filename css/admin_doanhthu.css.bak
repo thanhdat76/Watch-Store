@@ -5,7 +5,7 @@ html{
     width: 100%;
     font-size: 3rem;
     text-align: center;
-    color: black;
+    color: white;
     padding: 20px 0px;
     margin-bottom: 30px;
     font-weight: 500;
@@ -19,12 +19,12 @@ html{
     left: 50%;
     transform: translateX(-50%);
     width: 20%;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 .admin_right_search{
     width: 100%;
     padding: 15px 0px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     margin-bottom: 20px;
 }
 .admin_right_search form{
@@ -44,7 +44,7 @@ html{
     width: 77%;
     padding: 7px 10px;
     outline: none;
-    border: 1px solid black;
+    border: 0px;
     font-size: 1.1rem;
     margin: 10px 0px;
 }
@@ -64,34 +64,34 @@ html{
     width: 100%;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: white;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 .admin_right_table_frame{
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid white;
     border-collapse: collapse;
 }
 
 .admin_right_table_frame th{
     font-size: 1.3rem;
-    color: black;
+    color: white;
     padding: 7px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 .admin_right_table_frame td{
     font-size: 1.1rem;
-    color: black;
+    color: white;
     padding: 7px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 .admin_right_table_consequence{
     width: 100%;

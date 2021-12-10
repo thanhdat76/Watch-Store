@@ -15,7 +15,7 @@
                 <div class="admin_left">
                    <!-- <img class="admin_left_logo" src="../logo/logo-mona-2.png" alt=""> -->
                     <div class="admin_left_quanly">
-                        <h3> <a href ='admin_sanpham.php' style="text-decoration: none; color: white;"> Admin </a></h3>
+                        <h3> <a href = 'admin_sanpham.php'> Admin </a></h3>
                         <div class="admin_left_quanly_frame">
                             <div class="main_left_quanly_frame_item">
                                 <p><a href="">Product</a></p>
@@ -47,10 +47,10 @@
         $giasanpham=$_POST["giasanpham"];
         $destinnation="../anhsanpham/".$_FILES["anhsanpham"]["name"];
         move_uploaded_file($_FILES["anhsanpham"]["tmp_name"],$destinnation);
-        move_uploaded_file($_FILES["anh1"]["tmp_name"],"../Assets/anhsanpham/".$_FILES["anh1"]["name"]);
-        move_uploaded_file($_FILES["anh2"]["tmp_name"],"../Assets/anhsanpham/".$_FILES["anh2"]["name"]);
-        move_uploaded_file($_FILES["anh3"]["tmp_name"],"../Assets/anhsanpham/".$_FILES["anh3"]["name"]);
-        move_uploaded_file($_FILES["anh4"]["tmp_name"],"../Assets/anhsanpham/".$_FILES["anh4"]["name"]);
+        move_uploaded_file($_FILES["anh1"]["tmp_name"],"../anhsanpham/".$_FILES["anh1"]["name"]);
+        move_uploaded_file($_FILES["anh2"]["tmp_name"],"../anhsanpham/".$_FILES["anh2"]["name"]);
+        move_uploaded_file($_FILES["anh3"]["tmp_name"],"../anhsanpham/".$_FILES["anh3"]["name"]);
+        move_uploaded_file($_FILES["anh4"]["tmp_name"],"../anhsanpham/".$_FILES["anh4"]["name"]);
         $mota=$_POST["mota"];
         if($tensanpham!="" && $giasanpham!="" && isset($_FILES["anhsanpham"]["name"]) && isset($_FILES["anh1"]["name"]) && isset($_FILES["anh2"]["name"]) && isset($_FILES["anh3"]["name"]) && isset($_FILES["anh4"]["name"]) && $mota!="")
         {
@@ -78,19 +78,19 @@
                     <input type="text" name="giasanpham" placeholder="Nhập giá sản phẩm">
                 </div>
                 <div class="item">
-                <p>Chọn ảnh chính</p> <input class="item_file" type="file" name="anhsanpham">
+                <p>Nhập ảnh chính</p> <input class="item_file" type="file" name="anhsanpham">
                 </div>
                 <div class="item">
-                <p>Ảnh phụ 1</p> <input class="item_file" type="file" name="anh1">
+                <p>Nhập ảnh phụ 1</p> <input class="item_file" type="file" name="anh1">
                 </div>
                 <div class="item">
-                <p>Ảnh phụ 2</p> <input class="item_file" type="file" name="anh2">
+                <p>Nhập ảnh phụ 2</p> <input class="item_file" type="file" name="anh2">
                 </div>
                 <div class="item">
-                <p>Ảnh phụ 3</p>  <input class="item_file" type="file" name="anh3">
+                <p>Nhập ảnh phụ 3</p>  <input class="item_file" type="file" name="anh3">
                 </div>
                 <div class="item">
-                <p>Ảnh phụ 4</p>  <input class="item_file" type="file" name="anh4">
+                <p>Nhập ảnh phụ 4</p>  <input class="item_file" type="file" name="anh4">
                 </div>
                 <div class="item">
                     <textarea name="mota" id="" cols="30" rows="10" placeholder="Nhập mô tả sản phẩm"></textarea>

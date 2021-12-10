@@ -5,6 +5,6 @@ include"./connect.php";
         $sql="DELETE FROM `sanpham` WHERE ID=$id";
     $query=mysqli_query($conn, $sql);
     echo $id;
-		header('Location: admin_sanpham.php');
+     header('Location: admin_sanpham.php');
     }
 ?>

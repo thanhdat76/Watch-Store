@@ -10,32 +10,33 @@
     <link rel="stylesheet" href="../css/admin_cart.css">
 </head>
 <body>
-    <div class="admin">
-        <div class="admin_frame">
-            <div class="admin_left">
-                <img class="admin_left_logo" src="../logo/logo-mona-2.png" alt="">
-                <div class="admin_left_quanly">
-                    <h3>hệ thống admin quản lý</h3>
-                    <div class="admin_left_quanly_frame">
-                        <div class="main_left_quanly_frame_item">
-                            <p><a href="./admin_sanpham.php">Quản lý sản phẩm - Product</a></p>
-                        </div>
+<div class="admin">
+            <div class="admin_frame">
+                <div class="admin_left">
+                   <!-- <img class="admin_left_logo" src="../logo/logo-mona-2.png" alt=""> -->
+                    <div class="admin_left_quanly">
+                        <h3>Admin</h3>
+                        <div class="admin_left_quanly_frame">
+                            <div class="main_left_quanly_frame_item">
+                                <p><a href="./admin_sanpham.php">Product</a></p>
+                            </div>
 
-                        <div class="main_left_quanly_frame_item">
-                            <p><a href="./admin_new.php">Quản lý tin tức sự kiện - News & Sale</a></p>
-                        </div>
-
-
-                        <div class="main_left_quanly_frame_item">
-                            <p><a href="./admin_cart.php">Quản lý đơn hàng - Order</a></p>
-                        </div>
+                            <div class="main_left_quanly_frame_item">
+                                <p><a href="./admin_client.php">Client</a></p>
+                            </div>
 
 
-                        <div class="main_left_quanly_frame_item">
-                            <p><a href="./admin_lienhe.php">Quản lý phản hồi khách hàng - Contact</a></p>
-                        </div>
-                        <div class="main_left_quanly_frame_item">
-                                <p><a href="./admin_doanhthu.php">Quản lý doanh thu - revenue</a></p>
+                            <div class="main_left_quanly_frame_item">
+                                <p><a href="./admin_cart.php">Order</a></p>
+                            </div> 
+
+<!--
+                            <div class="main_left_quanly_frame_item">
+                                <p><a href="./admin_lienhe.php">Quản lý phản hồi khách hàng - Contact</a></p>
+                            </div>-->
+							
+                            <div class="main_left_quanly_frame_item">
+                                <p><a href="./admin_doanhthu.php">Doanh thu</a></p>
                             </div>
                     </div>
                 </div>

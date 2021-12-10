@@ -30,7 +30,7 @@
 
 
                             <div class="main_left_quanly_frame_item">
-                                <p><a href="./admin_cart.php">Order</a></p>
+                                <p><a href="./admin_cart.php">Quản lý đơn hàng - Order</a></p>
                             </div> 
 
 <!--
@@ -67,7 +67,7 @@
                 ?>
                 <tr>
                     <td><?php echo $row["ID"];?></td>
-                    <td class="main_right_table_anh_img"><img src="../Assets/anhsanpham/<?php echo $row["anhsanpham"];?>" alt=""></td>
+                    <td class="main_right_table_anh_img"><img src="../anhsanpham/<?php echo $row["anhsanpham"];?>" alt=""></td>
                     <td><?php echo $row["tensanpham"];?></td>
                     <td><?php echo number_format($row["gia"]);?>đ</td>
                     <td class="main_right_table_chucnang_delete_edit">
@@ -85,7 +85,6 @@
 
     <footer>
        <!-- <h1>Hệ thống quản lý cửa hàng bán đồng hồ</h1> -->
-
     </footer>
 </body>
 </html>

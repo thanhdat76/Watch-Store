@@ -21,7 +21,7 @@
         <div class="container">
           <div class="header-2-s">
             <div class="header-2-logo">
-              <img src="../Assets/logo/logo-mona-3.png" alt="" />
+              <!-- <img src="../Assets/logo/logo-mona-3.png" alt="" /> -->
             </div>
 
             <div class="header-2-search">

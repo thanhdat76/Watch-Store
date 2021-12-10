@@ -28,7 +28,6 @@
                                 <p><a href="./admin_client.php">Client</a></p>
                             </div>
 
-
                             <div class="main_left_quanly_frame_item">
                                 <p><a href="./admin_cart.php">Order</a></p>
                             </div> 
@@ -48,17 +47,17 @@
                 <?php
     include "./connect.php";
     mysqli_set_charset($conn, 'UTF8');
-    $sql="SELECT * FROM `sanpham`";
+    $sql="SELECT * FROM `khachhang`";
     $query=mysqli_query($conn, $sql);
     ?>
         <div class="main_right">
-            <p class="main_right_add"><a href="./admin_add_sanpham.php">Thêm sản phẩm</a></p>
+            <p class="main_right_add"><a href="./admin_add_sanpham.php">Thêm khach hang</a></p>
             <table class="main_right_table">
                 <th class="main_right_table_id">ID</th>
-                <th class="main_right_table_anh">Ảnh sản phẩm</th>
-                <th class="main_right_table_ten">Tên sản phẩm</th>
-                <th class="main_right_table_gia">Giá sản phẩm</th>
-                <th class="main_right_table_chucnang">Chức năng</th>
+                <th class="main_right_table_anh">Ten khach hang</th>
+                <th class="main_right_table_ten">Dia chi</th>
+                <th class="main_right_table_gia">So dien thoai</th>
+               
 
                 <!-- Khung san phẩm -->
                 <?php
@@ -67,9 +66,9 @@
                 ?>
                 <tr>
                     <td><?php echo $row["ID"];?></td>
-                    <td class="main_right_table_anh_img"><img src="../Assets/anhsanpham/<?php echo $row["anhsanpham"];?>" alt=""></td>
-                    <td><?php echo $row["tensanpham"];?></td>
-                    <td><?php echo number_format($row["gia"]);?>đ</td>
+                    <td><?php echo $row["Hoten"];?></td>
+                    <td><?php echo $row ["Diachi"]?></td>
+                    <td><?php echo $row ["Phone"]?></td>
                     <td class="main_right_table_chucnang_delete_edit">
                         <a href="./admin_edit_sanpham.php?id=<?php echo $row["ID"];?>">Sửa</a>
                         <a href="./admin_delete_new.php?id=<?php echo $row["ID"];?>">Xóa</a>
@@ -85,7 +84,6 @@
 
     <footer>
        <!-- <h1>Hệ thống quản lý cửa hàng bán đồng hồ</h1> -->
-
     </footer>
 </body>
 </html>
